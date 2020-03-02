@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Edit
+            </div>
+            <div class="card-body">
+                <form (submit)="editData()">
+                    <div class="form-group">
+                        <input type="number" [(ngModel)]="data.age" name="age" class="form-control" placeholder="Age" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" [(ngModel)]="data.height" name="height" class="form-control" placeholder="Height" required >
+                    </div>
+                    <div class="form-group">
+                        <input type="number" [(ngModel)]="data.weight" name="weight" class="form-control" placeholder="Weight" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" [(ngModel)]="data.geb" name="geb" class="form-control" placeholder="geb" required>
+                    </div>
+                    <button class="btn btn-primary btn-block">
+                        Edit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
